@@ -1,0 +1,650 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+	background: #ffffff;
+}
+
+.header-flex{
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	align-items: center;
+}
+
+.logo{
+	display: inline-block;
+}
+
+.logo img{
+	height: 30px;
+	max-width: 100%;
+}
+
+.hamburger{
+	width: 30px;
+	display: none;
+}
+
+.hamburger img{
+	max-width: 100%;
+}
+
+nav a{
+	color: #100720;
+	text-decoration: none;
+	font-family: "Comfortaa", sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.selected a{
+	color: #A81A5C;
+}
+
+.accent{
+	background-color: rgb(90, 114, 160, 0.6);
+	height: 5px;
+}
+
+.menu-list{
+	display: flex;
+	gap: 30px;
+	list-style: none;
+}
+body{
+	font-family: "Paytone One", sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+p{
+	font-family: "Comfortaa", sans-serif;
+  	font-optical-sizing: auto;
+  	font-size: 18px;
+  	margin-bottom: 20px;
+  	color: #373A40;
+}
+
+hr{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	border: 0.5px solid #A81A5C;
+}
+
+h1{
+	font-size: 50px;
+	line-height: 60px;
+	color: #ffffff;
+	margin-bottom: 40px;
+	margin-top: 10px;
+}
+
+h2{
+	font-size: 40px;
+	line-height: 45px;
+	margin-bottom: 25px;
+}
+
+h3{
+	font-size: 23px;
+}
+
+h4{
+	font-family: "Comfortaa", sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.container{
+	max-width: 1000px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-short{
+	max-width: 600px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero{
+	background-image: url(https://i.cbc.ca/1.6219816.1696977802!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/roller-skates.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: rgb(21, 21, 21, 0.6);
+	background-blend-mode: multiply;
+	text-align: center;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.hero h4{
+	color: #ffffff;
+	margin: 0px;
+}
+
+.hero a{
+	display: inline;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #A81A5C, #83B4FF);
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 20px;
+}
+
+.product{
+	margin: 100px 0;
+}
+
+.product-flex{
+	display: flex;
+	gap: 35px;
+}
+
+.left{
+	width: 50%;
+}
+
+.left h4{
+	color: #A81A5C;
+	font-size: 14px;
+}
+
+.left a{
+	display: inline-block;
+	color: #ffffff;
+	font-size: 14px;
+	text-decoration: none;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #2F2B2B;
+	margin-top: 25px;
+}
+
+.right{
+	width: 50%;
+	background-image: url(https://cdn.shopify.com/s/files/1/0089/4363/2441/files/C7-Roller-Skate-Collections-Chibi.jpg?v=1611800013);
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+}
+
+.services{
+	background-image: url(https://www.moxiskates.com/cdn/shop/files/DSC00751-min_460x.jpg?v=1710460677
+	);
+	background-size: cover;
+	background-position: center;
+	background-color: rgb(67, 10, 93, 0.8);
+	background-blend-mode: multiply;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.services-grid{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 35px;
+}
+
+.services-card{
+	margin: 5px;
+}
+
+.services-card h3{
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.services-card p{
+	color: #EEEEEE;
+}
+
+.blog{
+	text-align: center;
+	margin: 100px 0;
+}
+
+.blog-card{
+	width: 50%;
+}
+
+.intro{
+	margin-bottom: 50px;
+}
+
+.blog-flex{
+	display: flex;
+	gap: 20px;
+	text-align: left;
+}
+
+.bg-image{
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 15px;
+	border-radius: 3px;
+}
+
+.blog-card:nth-of-type(1) .bg-image{
+	background-image: url(https://t3.ftcdn.net/jpg/07/19/64/98/360_F_719649878_eFle9GVvk7aVJALDmNVoBigyUVboK8Al.jpg);
+}
+
+.blog-card:nth-of-type(2) .bg-image{
+	background-image: url(https://static.wixstatic.com/media/95e1ea_c5e762dbad464c1e9d689a6827d7c645~mv2.jpg/v1/fill/w_980,h_639,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/95e1ea_c5e762dbad464c1e9d689a6827d7c645~mv2.jpg)
+}
+
+.blog-flex h5{
+	font-family: "Comfortaa", sans-serif;
+	color: #ffffff;
+}
+
+.blog-flex span{
+	margin-right: 5px;
+	margin-bottom: 10px;
+	display: inline-block;
+	background-color: #A81A5C;
+	padding: 5px 10px;
+}
+
+.blog-flex h3{
+	margin-bottom: 20px;
+}
+
+.blog-flex h6{
+	font-family: "Comfortaa", sans-serif;
+	font-size: 16px;
+	color: #A81A5C;
+}
+
+.images-grid{
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+}
+
+.images-card1{
+	background-image: url(https://static.wixstatic.com/media/a59440_a62afc1b57cf4b26a4463a128cfb74f1~mv2.jpg/v1/fill/w_908,h_860,fp_0.50_0.50,q_90,enc_auto/a59440_a62afc1b57cf4b26a4463a128cfb74f1~mv2.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.images-card2{
+	background-image: url(https://static.wixstatic.com/media/a59440_05414a72806643e09404d1ee6591aeb5~mv2.jpg/v1/fill/w_908,h_908,fp_0.50_0.50,q_90,enc_auto/a59440_05414a72806643e09404d1ee6591aeb5~mv2.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.images-card3{
+	background-image: url(https://static.wixstatic.com/media/a59440_1415612df2c3459d9ac165c016f53c15~mv2.jpg/v1/fill/w_908,h_1362,fp_0.50_0.50,q_90,enc_auto/a59440_1415612df2c3459d9ac165c016f53c15~mv2.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.images-card4{
+	background-image: url(https://images.squarespace-cdn.com/content/v1/5db87888cf388a54d7a8cffd/1615555255062-866P800PY8RDCGQ4H34R/We+are+Girls+in+Sport+roller+skating+rebecca+ryan+loveinskates+1.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.images-card5{
+	background-image: url(https://www.flaneurz.com/media/mgs_blog/f/l/flaneurz-blog-bienfaits-du-roller-1_3.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.images-card6{
+	background-image: url(https://www.skatemoore.com/wp-content/uploads/2024/02/pexels-photo-7335221.jpg);
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.footer p{
+	font-size: 13px;
+	padding-top: 30px;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 992px){
+	.container-short{
+		max-width: 500px;
+	}
+
+	.hero{
+		padding-top: 130px;
+		padding-bottom: 130px;
+	}
+
+	.hero h4{
+		margin-bottom: 2px;
+	}
+
+	hr{
+		width: 60%;
+	}
+
+	h1{
+		font-size: 40px;
+		line-height: 50px;
+		margin-bottom: 30px;
+	}
+
+	.product{
+		margin: 80px 0;
+	}
+
+	.left h4{
+		margin-bottom: 15px;
+	}
+
+	.product a{
+		margin-top: 10px;
+	}
+
+	.right{
+		height: 400px;
+	}
+
+	h2{
+		font-size: 30px;
+		line-height: 35px;
+		margin-bottom: 18px;
+	}
+
+	.services{
+		padding: 55px 0;
+	}
+
+	.services-grid{
+		gap: 5px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.services-card{
+		margin: 10px;
+	}
+
+	.blog{
+		margin: 80px 0;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.container-short{
+		max-width: 440px;
+	}
+
+	.hero{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.hero h4{
+		font-size: 14px;
+		margin-bottom: 2px;
+	}
+
+	hr{
+		width: 70%;
+	}
+
+	h1{
+		font-size: 35px;
+		line-height: 45px;
+		margin-bottom: 25px;
+	}
+
+	.product{
+		margin: 45px 0;
+	}
+
+	.hero a{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.product-flex{
+		flex-direction: column-reverse;
+	}
+
+	.right{
+		width: 100%;
+		height: 300px;
+	}
+
+	.left{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+
+	p{
+		font-size: 17px;
+  		margin-bottom: 18px;
+	}
+
+	.product a{
+		margin-top: 10px;
+	}
+
+	.services{
+		padding: 45px 0;
+	}
+
+	.services-grid{
+		grid-template-columns: repeat(1,1fr);
+		gap: 10px;
+	}
+
+	.services-card{
+		margin: 5px 0;
+	}
+
+	.blog{
+		margin: 60px 0;
+	}
+
+	.bg-image{
+		height: 250px;
+	}
+
+	.intro{
+	margin-bottom: 15px;
+	}
+
+	.blog-flex{
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.blog-card{
+		width: 100%;
+		margin: 20px 0;
+	}
+	
+	.images-card1{
+		height: 200px;
+	}
+
+	.images-card2{
+		height: 200px;
+	}
+
+	.images-card3{
+		height: 200px;
+	}
+
+	.images-card4{
+		height: 200px;
+	}
+
+	.images-card5{
+		height: 200px;
+	}
+
+	.images-card6{
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 576px){
+	
+	.container-short{
+		max-width: 375px;
+	}
+
+	nav{
+		display: none;
+	}
+
+	.hamburger{
+		display: inline-block;
+	}
+
+	.hero{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.hero h4{
+		font-size: 14px;
+		margin-bottom: 2px;
+	}
+
+	hr{
+		width: 80%;
+	}
+
+	h1{
+		font-size: 30px;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
+
+	.product{
+		margin: 45px 0;
+	}
+
+	.hero a{
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
+
+	.product-flex{
+		flex-direction: column-reverse;
+	}
+
+	.right{
+		width: 100%;
+		height: 200px;
+	}
+
+	.left{
+		width: 100%;
+	}
+
+	h2{
+		font-size: 25px;
+		line-height: 30px;
+		margin-bottom: 18px;
+	}
+
+	h3{
+		font-size: 19px;
+	}
+
+	p{
+		font-size: 16px;
+  		margin-bottom: 18px;
+	}
+
+	.product a{
+		margin-top: 10px;
+	}
+
+	.services{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.services-grid{
+		grid-template-columns: repeat(1,1fr);
+		gap: 10px;
+	}
+
+	.services-card{
+		margin: 3px 0;
+	}
+
+	.blog{
+		margin: 40px 0;
+	}
+
+	.bg-image{
+		height: 200px;
+	}
+
+	.intro{
+	margin-bottom: 15px;
+	}
+
+	.blog-flex{
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.blog-card{
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.images-card1{
+		height: 150px;
+	}
+
+	.images-card2{
+		height: 150px;
+	}
+
+	.images-card3{
+		height: 150px;
+	}
+
+	.images-card4{
+		height: 150px;
+	}
+
+	.images-card5{
+		height: 150px;
+	}
+
+	.images-card6{
+		height: 150px;
+	}
+}
